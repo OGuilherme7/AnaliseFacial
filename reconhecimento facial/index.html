@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Cadastro de Alunos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main>
+
+        
+        
+        <section id="info-aluno">
+            <h2>Analisador Facial</h2>
+
+            <div class="webcam">
+                <video id="webcam" width="640" height="480" autoplay></video>
+            </div>
+            <!-- <canvas></canvas> -->
+
+            <span class="face-not-detected"></span>
+
+            <article class="analise-facial">
+                <h3>Análise de Reconhecimento Facial</h3>
+                <div class="resultados">
+                    <div class="campo">
+                        <label>Idade Estimada:</label>
+                        <span id="idade-estimada">--:--</span>
+                    </div>
+                    
+                    <div class="campo">
+                        <label>Gênero:</label>
+                        <span id="genero-detectado">--:--</span>
+                    </div>
+
+                    <div class="campo">
+                        <label>Emoção Detectada:</label>
+                        <span id="emocao">--:--</span>
+                    </div>
+
+                    <div class="campo">
+                        <label>Cor dos olhos:</label>
+                        <span id="cor-olho">--:--</span>
+                    </div>
+
+                    <div class="campo">
+                        <label>Cor da pele:</label>
+                        <span id="cor-pele">--:--</span>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+    </main>
+
+    
+    
+    <footer>
+        <p>Sistema de Análise Facial - Versão 1.0</p>
+    </footer>
+
+    <script defer src="https://cdn.jsdelivr.net/npm/face-api.js/dist/face-api.min.js"></script>
+
+    <script src="script.js" type="module"></script>
+</body>
+</html>
